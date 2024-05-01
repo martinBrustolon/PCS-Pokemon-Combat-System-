@@ -1,1 +1,1 @@
-new Trainer(raul)
+new Trainer(raul,[pokemons.galvantula])

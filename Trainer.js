@@ -1,9 +1,9 @@
 let idTrainer =1
 
 class Trainer {
-    constructor(name) {
+    constructor(name,team) {
         this.name = name;
-        this.team = [];
+        this.team = team;
         this.id = idTrainer;
         idTrainer++;
     }
