@@ -2,9 +2,9 @@
 
 ## sistema de combate
 - [x] Crear entrenadores y pokemons
-- [ ] Crear los equipos
-- [ ] Crear una lista de movimientos básicos
-- [ ] Crear una función que verifique que un equipo tiene por lo menos un pokemon sano
+- [x] Crear los equipos
+- [x] Crear una lista de movimientos básicos
+- [x] Crear una función que verifique que un equipo tiene por lo menos un pokemon sano
 - [ ] Crear una funcion que calcule el daño de un movimiento y si el otro sobrevivió
 - [ ] Crear una función para calcular que pokemon se mueve primero
 - [ ] crear una función para seleccionar un movimiento y ejecutarlo
