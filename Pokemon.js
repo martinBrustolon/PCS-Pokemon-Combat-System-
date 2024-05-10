@@ -1,28 +1,35 @@
 let idPokemon = 1
+
+function pokeStats(baseStats,evs) {
+    let stats = []
+    for (let i=0;i<6;i+=1) {
+        if (i==0) {
+            stats.push(10 + (100/100 * ((baseStats[i]*2) + 31 + evs[i]/4)) + 100)
+        }
+        else {
+            console.log((5 + (100/100 * ((baseStats[i]*2)+31+evs[i]/4))))
+            stats.push((5 + (100/100 * ((baseStats[i]*2)+31+evs[i]/4))))
+        }
+    }
+    return stats
+} 
+
 class Pokemon {
-    constructor(specie,ps,atk,def,spa,spd,spe,ability,weight,type1,type2,moves) {
+    constructor(specie,ability,moves,evs) {
         this.specie = specie;
-        this.ps = ps;
-        this.atk = atk;
-        this.def = def;
-        this.spa = spa;
-        this.spd = spd;
-        this.spe = spe;
-        this.ability = ability;
-        this.weight = weight;
-        this.type1 = type1;
-        this.type2 = type2;
+        this.ability = this.specie.abilities[ability];
+        this.evs = evs
+        this.stats = pokeStats(this.specie.baseStats,this.evs)
         this.isDefeated = false;
         this.object = ""
         this.status = ""
         this.isConfused = false
-        this.moves - moves
+        this.moves = moves
         this.id = idPokemon;
         idPokemon++;
     }
 }
 
 let pokemons = [
-    new Pokemon("galvantula",70,77,60,97,60,108,"compound-eyes",143,"bug","electric"),
-    new Pokemon("greninja",72,95,67,103,71,122,"torrent",400,"water","dark")
+    new Pokemon(species[0],0,"",[4,0,0,252,0,252])
 ]
