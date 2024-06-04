@@ -22,9 +22,9 @@ function damageCalculate(user,enemy,move) {
     let e = 1
     let b = 1
     let v = Math.round(Math.random()*(100-85)+parseInt(85))
-    if (user.type1 == move.type|| user.type2 == move.type) {
+    if (user.form.type1 == move.type|| user.form.type2 == move.type) {
         b = 1.5
     }
-    let damage = 0.01 * b * e * v * (((0.2 * 100 + 1)*user.atk*move.power)/(25*enemy.def))
+    let damage = 0.01 * b * e * v * ((((0.2 * 100 + 1)*user.stats[3]*move.power)/(25*enemy.stats[4]))+2)
     return damage
 }
