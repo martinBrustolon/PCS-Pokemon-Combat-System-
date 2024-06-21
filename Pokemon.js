@@ -18,16 +18,18 @@ function pokeStats(baseStats,evs) {
 class Pokemon {
     constructor(specie,form,ability,moves,evs) {
         this.specie = specie;
-        this.form = form
+        this.form = form;
         this.ability = this.form.abilities[ability];
-        this.evs = evs
-        this.stats = pokeStats(this.form.baseStats,this.evs)
+        this.evs = evs;
+        this.stats = pokeStats(this.form.baseStats,this.evs);
+        this.life = this.stats[0];
         this.isDefeated = false;
-        this.object = ""
-        this.status = ""
-        this.isConfused = false
-        this.moves = moves
+        this.object = "";
+        this.status = "";
+        this.isConfused = false;
+        this.moves = moves;
         this.id = idPokemon;
+        this.priority = 0;
         idPokemon++;
     }
 }

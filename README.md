@@ -5,7 +5,7 @@
 - [x] Crear los equipos
 - [x] Crear una lista de movimientos básicos
 - [x] Crear una función que verifique que un equipo tiene por lo menos un pokemon sano
-- [ ] Crear una funcion que calcule el daño de un movimiento y si el otro sobrevivió
+- [x] Crear una funcion que calcule el daño de un movimiento y si el otro sobrevivió
 - [ ] Crear una función para calcular que pokemon se mueve primero
 - [ ] crear una función para seleccionar un movimiento y ejecutarlo
 - [ ] crear una función que haga que un pokemon tenga que ser cambiado al ser derrotado o finalizar el combate
